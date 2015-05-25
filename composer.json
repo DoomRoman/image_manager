@@ -35,6 +35,7 @@
         "sensio/framework-extra-bundle": "~3.0,>=3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
         "braincrafted/bootstrap-bundle": "~2.0",
+        "fortawesome/font-awesome": "~4.0",
         "twbs/bootstrap": "3.0.*",
         "jquery/jquery":  "1.11.*",
         "knplabs/knp-menu-bundle": "~2"
