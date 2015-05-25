@@ -1,0 +1,4 @@
+services:
+#    herper_base.example:
+#        class: Herper\Bundle\BaseBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

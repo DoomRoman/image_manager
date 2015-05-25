@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}Image Manager{% endblock %}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" media="screen" />
+        {% include 'BraincraftedBootstrapBundle::ie8-support.html.twig' %}
+        {% block head %}{% endblock %}
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="col-md-2">&nbsp;</div>
+            <div class="col-md-8">
+                <div class="navbar">
+                    {{ knp_menu_render('HerperBaseBundle:Builder:mainMenu', { 'style': 'tabs' }) }}
+                </div>
+                {% block body %}<h1>No Content!</h1>{% endblock %}
+            </div>
+            <div class="col-md-2">&nbsp;</div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+        <script src="{{ asset('js/jquery.js') }}"></script>
+        <!-- Include all JavaScripts, compiled by Assetic -->
+        <script src="{{ asset('js/bootstrap.js') }}"></script>
+        {% block javascript %}{% endblock %}
+    </body>
+</html>

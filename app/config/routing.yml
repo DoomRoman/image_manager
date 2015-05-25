@@ -1,0 +1,7 @@
+herper_base:
+    resource: "@HerperBaseBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
